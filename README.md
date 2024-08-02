@@ -1,2 +1,2 @@
 # maliteFx
-MalifeFx Website Development Stages
+MalifeFx Website Development Progress Log 
