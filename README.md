@@ -5,4 +5,5 @@ MalifeFx Website Development Progress Log
 Mobile Support ☑️
 Desktop Support ✅
 Contact page ☑️
+Enable Bootstrap ☑️
 Deploy Commercial Use ☑️
