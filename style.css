@@ -1,3 +1,31 @@
+
+#popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        #popup input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        #popup button {
+            display: block;
+            width: 100%;
+            padding: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
 .logo {
     font-family: cursive, Brush Script MT;
     color: #0000FF;
@@ -8,6 +36,7 @@ body {
     background-color: rgba(211, 211, 211, 0.3);
     color: #333;
 }
+
 .navbar {
     position: fixed;
     top: 0;
@@ -36,6 +65,12 @@ body {
     color: #333;
     text-decoration: none;
     margin: 0 1rem;
+}
+.nav-content a:hover {
+    color: #333;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
 }
 .hamburger {
     display: none;
@@ -297,5 +332,5 @@ body {
 .hero-image {
     position:absolute;
     margin-left:700px;
-    margin-bottom:50px;
+    margin-bottom:70px;
 }
