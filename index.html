@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaliteFx Trading</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MaliteFx</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="./favicon/MaliteFx-favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,17 +12,15 @@
 
 </head>
 <body>
-
     <div id="mountain"></div>
-    <div id="popup">
-        <label>This site is still under construction by</label>
-        <label><em style="color:#bfff00;"> easyaspy-sys</em></label>
 
+    <div id="popup">
+        This site is still under construction by <em class="mytag">easyaspy-sys</em>
     </div>
 
     <nav class="navbar">
         <div class="nav-content">
-            <a href="#" id="nav-logo" class="logo" style="color:blue; font-weight:bold; font-size: 25px;">Malite<span>Fx</span></a>
+            <a href="#" id="nav-logo" class="logo" style="color:#0878c4; font-weight:bold; font-size: 25px;">MaliteFx</a>
             <div class="nav-links">
                 <a href="#testament">Testaments</a>
                 <a href="#directions">Directions</a>
@@ -41,7 +39,8 @@
             <div class="hero-text">
                 <div class="hero-text-1">Malite Trading and Signal Experts</div>
                 <div id="typing-container">
-                <span id="typed-text"></span><span id="cursor"></span></div>
+                    <span id="typed-text"></span><span id="cursor"></span>
+                </div>
                 <div class="hero-text-3">Trade for you while you earn!</div>
                 <button class="hero-button">Join Me Now!</button>
             </div>
@@ -51,162 +50,31 @@
         </div>
     </section>
 
-    <section class="about-section" id="testament">
-        <h2 class="about-title">Over 300 Investors<br>and forex trader trust<br><span class="logo" >MaliteFx</span>.</h2>
+    <section id="testament" class="section about-section">
+        <h2 class="about-title">Over 300 Investors and forex trader trust <span class="logo">MaliteFx</span>.</h2>
         <div class="about-content">
-            <div class="image-placeholder"></div>
-            <div class="testimonials-window" id="testimonials-window">
-                <div class="testimonials" id="testimonials-container">
-                    <!-- Testimonials will be dynamically inserted here -->
-                </div>
+            <div class="image-placeholder"> <img src="./garbage/malitephotos.png" class="testament-image" alt="testament photos"></div>
+            <div id="testimonials-window" class="testimonials-window">
+                <div id="testimonials-container" class="testimonials"></div>
             </div>
         </div>
     </section>
 
-    <section id="directions" class="directions-section">
+    <section id="directions" class="section directions-section">
         <h2 class="directions-title">How it works.</h2>
         <div class="directions-buttons">
-            <p class="counting"><em>1.</em></p><button id="purchase-btn" class="direction-btn">Purchase Package</button>
-            <p class="counting"><em>2.</em></p><button id="get-link-btn" class="direction-btn">Get link</button>
-            <p class="counting"><em>3.</em></p><button id="access-btn" class="direction-btn">Access signals and lessons</button>
+            <div class="counting">1.</div>
+            <button id="purchase-btn" class="direction-btn">Purchase Package</button>
+            <div class="counting">2.</div>
+            <button id="get-link-btn" class="direction-btn">Get link</button>
+            <div class="counting">3.</div>
+            <button id="access-btn" class="direction-btn">Access signals and lessons</button>
         </div>
         <div class="directions-footer">
-            <a style ="color:black; text-decoration:none;" href="#"> It's <span style="margin-right:10px;" class="logo"><em>Easy!</em></span> Are you ready to start?</a>
+            <a href="#" style="color:#333; text-decoration:none;">It's <span class="logo" style="margin-right:10px;">Easy!</span> Are you ready to start?</a>
         </div>
     </section>
 
-    <script>
-
-        const text = "Let MaliteFx";
-        const typedTextSpan = document.querySelector("#typed-text");
-        const cursorSpan = document.querySelector("#cursor");
-
-        let textIndex = 0;
-        let isTyping = true;
-
-        function typeText() {
-            if (isTyping) {
-                if (textIndex < text.length) {
-                    typedTextSpan.textContent += text.charAt(textIndex);
-                    textIndex++;
-                    setTimeout(typeText, 200);
-                } else {
-                    isTyping = false;
-                    setTimeout(backspaceText, 1000);
-                }
-            }
-        }
-
-        function backspaceText() {
-            if (!isTyping) {
-                if (textIndex > 0) {
-                    typedTextSpan.textContent = text.substring(0, textIndex - 1);
-                    textIndex--;
-                    setTimeout(backspaceText, 100);
-                } else {
-                    isTyping = true;
-                    setTimeout(typeText, 500);
-                }
-            }
-        }
-
-        // Start the typing effect
-        typeText();
-
-        function toggleMenu() {
-            var navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('show');
-        }
-
-        // CSV content as a string
-        const csvContent = `
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit.","John Doe"
-"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","Jane Smith"
-"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.","Bob Johnson"
-"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","Alice Brown"
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.","Eva Green"
-        `.trim();
-
-        // Function to parse CSV string
-        function parseCSV(csv) {
-            const lines = csv.split('\n');
-            return lines.map(line => {
-                const [text, author] = line.split('","').map(item => item.replace(/^"|"$/g, ''));
-                return { text, author };
-            });
-        }
-
-        // Function to create testimonial HTML
-        function createTestimonialHTML(testimonial) {
-            return `
-                <div class="testimonial">
-                    <div class="testimonial-image"></div>
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">"${testimonial.text}"</p>
-                        <p class="testimonial-author">${testimonial.author}</p>
-                    </div>
-                </div>
-            `;
-        }
-
-        // Function to load testimonials from CSV string and initialize the slider
-        function loadTestimonials() {
-            const testimonials = parseCSV(csvContent);
-            const container = document.getElementById('testimonials-container');
-
-            // Double the testimonials to ensure smooth looping
-            const doubledTestimonials = [...testimonials, ...testimonials];
-
-            doubledTestimonials.forEach(testimonial => {
-                container.innerHTML += createTestimonialHTML(testimonial);
-            });
-
-            initializeTestimonialSlider();
-        }
-
-        // Function to initialize and run the testimonial slider
-        function initializeTestimonialSlider() {
-            const container = document.getElementById('testimonials-container');
-            const window = document.getElementById('testimonials-window');
-            const testimonials = container.children;
-            const testimonialHeight = testimonials[0].offsetHeight + 20; // Height + margin
-            let currentIndex = 0;
-            let isHovered = false;
-
-            function slideTestimonials() {
-                if (!isHovered) {
-                    currentIndex = (currentIndex + 2) % testimonials.length;
-                    container.style.transform = `translateY(-${currentIndex * testimonialHeight}px)`;
-
-                    // Reset to the start when we reach the end of the doubled list
-                    if (currentIndex >= testimonials.length / 2) {
-                        setTimeout(() => {
-                            container.style.transition = 'none';
-                            currentIndex = 0;
-                            container.style.transform = `translateY(0)`;
-                            setTimeout(() => {
-                                container.style.transition = 'transform 5s linear';
-                            }, 50);
-                        }, 5000); // Wait for the transition to complete
-                    }
-                }
-            }
-
-            window.addEventListener('mouseenter', () => {
-                isHovered = true;
-            });
-
-            window.addEventListener('mouseleave', () => {
-                isHovered = false;
-            });
-
-            setInterval(slideTestimonials, 5000); // Change every 5 seconds
-        }
-
-        // Load testimonials when the page is loaded
-        window.addEventListener('load', loadTestimonials);
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
