@@ -10,24 +10,13 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             z-index: 1000;
         }
-        #popup input {
-            display: block;
-            width: 100%;
-            margin-bottom: 10px;
-            padding: 5px;
-        }
-        #popup button {
-            display: block;
-            width: 100%;
-            padding: 5px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
+
 
 .logo {
-    font-family: cursive, Brush Script MT;
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: bold;
+
+    font-size: 1.5em;
     color: #0000FF;
 }
 body {
@@ -334,10 +323,10 @@ color:#333 !important;
 }
 
 #typing-container {
-    font-size: 48px;
+    font-size: 4em;
     font-weight: bold;
     color: #0000FF;
-    font-family: cursive;
+    font-family: "Nanum Brush Script", cursive;
 }
 #cursor {
     display: inline-block;
