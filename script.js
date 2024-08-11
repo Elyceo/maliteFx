@@ -130,7 +130,7 @@ function slideTestimonials() {
 window.addEventListener('load', loadTestimonials);
 
 document.addEventListener('DOMContentLoaded', function() {
-    const navbar = document.querySelector('.navbar');
+    const navbar = document.querySelector('.mynavbar');
 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {

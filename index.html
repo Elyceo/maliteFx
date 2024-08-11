@@ -9,18 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <!--local bootstrap-->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
 <body>
-    <div id="mountain"></div>
-
     <div id="popup">
-        This site is still under construction by <em class="mytag">easyaspy-sys</em>
+        This site is still under construction by <em class="mytag"><a src="#">easyaspy-sys</a></em>
     </div>
-
-    <nav class="navbar">
+    <nav class="mynavbar">
         <div class="nav-content">
-            <a href="#" id="nav-logo" class="logo" style="color:#0878c4; font-weight:bold; font-size: 25px;">MaliteFx</a>
+            <a href="#" id="nav-logo" class="logo" style="color:#0878c4; font-weight:bold; font-size: 25px;"><em>M</em>alite<em>Fx</em></a>
             <div class="nav-links">
                 <a href="#testament">Testaments</a>
                 <a href="#directions">Directions</a>
@@ -50,8 +50,8 @@
         </div>
     </section>
 
-    <section id="testament" class="section about-section">
-        <h2 class="about-title">Over 300 Investors and forex trader trust <span class="logo">MaliteFx</span>.</h2>
+    <section id="testament" class="about-section">
+        <h2 class="about-title">Over 300 Investors and forex trader trust <span class="logo"><em>M</em>alite<em>Fx</em></span>.</h2>
         <div class="about-content">
             <div class="image-placeholder"> <img src="./temp/malitephotos.png" class="testament-image" alt="testament photos"></div>
             <div id="testimonials-window" class="testimonials-window">
@@ -60,19 +60,80 @@
         </div>
     </section>
 
+    <section id="why" class="why-section">
+        <div class="reason-title">Why Choose <span class="logo"><em>M</em>alite<em>Fx</em></span></div>
+        <div class="reason-container">
+            <div class="reason-content">
+                <div class="in-heading">Expert Traders</div>
+                <div class="in-text">Our team consists of highly experienced traders</div>
+            </div>
+            <div class="reason-content">
+                <div class="in-heading">Comprehensive Lessons</div>
+                <div class="in-text">Learn with our detailed and thorough lessons</div>
+            </div>
+            <div class="reason-content">
+                <div class="in-heading">24/7 Support</div>
+                <div class="in-text">Get assistance whenever you need it</div>
+            </div>
+        </div>
+    </section>
+
     <section id="directions" class="section directions-section">
         <h2 class="directions-title">How it works.</h2>
         <div class="directions-buttons">
-            <div class="counting">1.</div>
-            <button id="purchase-btn" class="direction-btn">Purchase Package</button>
-            <div class="counting">2.</div>
-            <button id="get-link-btn" class="direction-btn">Get link</button>
-            <div class="counting">3.</div>
-            <button id="access-btn" class="direction-btn">Access signals and lessons</button>
+            <em class="counting">1.</em>
+            <button id="purchase-btn" class="hero-button">Purchase Package</button>
+            <em class="counting">2.</em>
+            <button id="get-link-btn" class="hero-button">Get link</button>
+            <em class="counting">3.</em>
+            <button id="access-btn" class="hero-button">Access signals and lessons</button>
         </div>
         <div class="directions-footer">
             <a href="#" style="color:#333; text-decoration:none;">It's <span class="logo" style="margin-right:10px;">Easy!</span> Are you ready to start?</a>
         </div>
+    </section>
+
+    
+    <section id="contact" class="contact-section">
+            <div class="contact-title">Get in touch</div>
+            
+            <div class="contact-content">
+                <div class="contact-card">
+                    <div class="card" style=" display: inline-block;background-color:#0878c4; color:white; width: 18rem;">
+                        <img src="./temp/image.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Talk to Marcio Malite</h5>
+                        <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color:#0878c4;" class="contact-form">
+                    <div class="form-content" style="display:inline-block;:blue;">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Name</span>
+                        <input type="text" class="form-control" placeholder="Your name" aria-label="Name" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Email</span>
+                        <input type="email" class="form-control" placeholder="" aria-label="Email" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Inquiry</span>
+                        <input type="dataset" class="form-control" placeholder="Subject" aria-label="Subject" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    <div style="width: 18rem; height: 13.5rem;" class="input-group">
+                        <span class="input-group-text">Massage</span>
+                        <textarea class="form-control" aria-label="Massage"></textarea>
+                    </div>
+                    </div>
+
+                    <button class="hero-button contact-button">Send</button>
+
+                </div>
+            </div>
     </section>
 
     <script src="script.js"></script>

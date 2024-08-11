@@ -1,29 +1,15 @@
 .mytag{
-    color:#0033ff
+    color:#c8ff00
 }
 .counting{
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 10px;
     font-weight: bold;
     color: #333;
 }
-.directions-section {
-    min-height: 100vh;
-    padding: 4rem 2rem;
-    box-sizing: border-box;
-}
-.directions-buttons {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-}
 #popup {
     position: fixed;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
@@ -31,6 +17,7 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     z-index: 1000;
+    font-size:.8em;
 }
 .logo {
     font-family: "Nanum Brush Script", cursive;
@@ -41,11 +28,11 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: rgba(211, 211, 211, 0.3);
+    background-color: #f0f0f0;
     color: #333;
 }
 
-.navbar {
+.mynavbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -54,8 +41,8 @@ body {
     transition: background-color 0.3s ease;
     z-index: 1000;
 }
-.navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0.4);
+.mynavbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.5)!important;
 }
 .nav-content {
     display: flex;
@@ -106,6 +93,7 @@ body {
     padding: 2rem;
     padding: 5rem;
     box-sizing: border-box;
+    background-color: #f0f0f0;
 }
 .hero-container {
     display: flex;
@@ -131,17 +119,13 @@ body {
     height: auto;
 }
 .hero-text-1 {
-    font-size: 2.3em;
+    font-size: 2em;
     font-weight: bold;
     color: rgb(51, 51, 51);
 }
-.hero-text-2 {
-    font-size: 4em;
-    color: #0878c4;
-    margin: 20px 0;
-}
+
 .hero-text-3 {
-    font-size: 2.3em;
+    font-size: 2em;
     color: rgb(51, 51, 51);
     margin-bottom: 30px;
     font-weight: bold;
@@ -151,7 +135,7 @@ body {
     color: white;
     border: 2px solid #0878c4;
     padding: 15px 30px;
-    font-size: 1.2em;
+    font-size: .8em;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 15px;
@@ -189,7 +173,6 @@ body {
 .testament-image {
    width: 100%;
     aspect-ratio: 16 / 9;
-    background-color: red;
     margin-right: 5%;
 }
 .testimonials-window {
@@ -209,7 +192,7 @@ body {
     transition: transform 5s linear;
 }
 .testimonial {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(211, 211, 211, 0.3);
     padding: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -238,6 +221,149 @@ body {
 .testimonial-author {
     font-weight: bold;
 }
+.trade-malitefx {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.in-text {
+    font-size: .5em;
+}
+.in-heading {
+    font-size: .9em;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    margin-bottom:10%;
+    margin-top:5%;
+}
+.why-section{
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 2rem;
+}
+.reason-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.reason-title {
+    margin-bottom:10%;
+    font-weight: bold;
+    font-size:1em !important;
+}
+.reason-content{
+    width:25%;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.021);
+    margin-left: 4%;
+    padding:1.5%;
+
+}
+.directions-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 8rem;
+    
+}
+.directions-section {
+    background-color: #f0f0f0;
+    position: relative;
+}
+.directions-section {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+}
+.directions-buttons {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.direction-btn {
+    background-color: #0878c4;
+    color: white;
+    border: 2px solid #0878c4;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+.direction-btn:hover {
+    background-color: transparent;
+    color: rgb(51, 51, 51);
+}
+
+#get-link-btn {
+    position: relative;
+    top: -30px;
+    width: 120px;
+}
+.directions-footer {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#typing-container {
+    font-size: 3em;
+    font-weight: bold;
+    color: #0878c4;
+    font-family: "Nanum Brush Script", cursive;
+}
+#cursor {
+    display: inline-block;
+    width: 3px;
+    height: 50px;
+    background-color: #333;
+    margin-left: 2px;
+    animation: blink 0.7s infinite;
+}
+.contact-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight:500;
+}
+.contact-form{
+    padding:1px;
+    border-radius: 2%;
+    margin:1px;
+}
+.contact-caard{
+    margin:1px;
+}
+.contact-section{
+    background-color: #f0f0f0;
+}
+.contact-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+   
+   
+}
+.contact-button{
+    background-color:aliceblue;
+    color:#333;
+    border-style:solid;
+    margin-top: 4%;
+    margin-left:30%; 
+    display:block;
+}
+.contact-container{
+    text-align: center;
+}
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -264,6 +390,12 @@ body {
     .hero-text, .hero-image {
         min-width: 100%;
     }
+    .hero-image{
+        order:-1;
+    }
+    .hero-button{
+        display:block;
+    }
     .about-content {
         flex-direction: column;
         align-items: center;
@@ -272,66 +404,13 @@ body {
         width: 90%;
         margin: 0 0 20px 0;
     }
-}
-
-.trade-malitefx {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.directions-section {
-    background-color: rgba(255, 255, 255, 0.8);
-    position: relative;
-}
-.directions-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 8rem;
-}
-
-.direction-btn {
-    background-color: #0878c4;
-    color: white;
-    border: 2px solid #0878c4;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 30px;
-}
-.direction-btn:hover {
-    background-color: transparent;
-    color: rgb(51, 51, 51);
-}
-#purchase-btn, #access-btn {
-    width: 200px;
-}
-#get-link-btn {
-    position: relative;
-    top: -30px;
-    width: 120px;
-}
-.directions-footer {
-    text-align: center;
-    margin-top: 4rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-#typing-container {
-    font-size: 4em;
-    font-weight: bold;
-    color: #0878c4;
-    font-family: "Nanum Brush Script", cursive;
-}
-#cursor {
-    display: inline-block;
-    width: 3px;
-    height: 50px;
-    background-color: #333;
-    margin-left: 2px;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+    .reason-content {
+        width: 90%;
+        margin: 30px;
+        margin-right:0px;
+    }
+    .contact-content{
+        flex-direction: column;
+        align-items: center;
+    }
 }
