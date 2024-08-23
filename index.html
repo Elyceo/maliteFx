@@ -34,7 +34,7 @@
         </div>
     </nav>
 
-    <section class="hero-section">
+    <section class=" bgimg-1 hero-section">
         <div class="hero-container">
             <div class="hero-text">
                 <div class="hero-text-1">Malite Trading and Signal Experts</div>
@@ -51,13 +51,52 @@
     </section>
 
     <section id="testament" class="about-section">
-        <h2 class="about-title">Over 300 Investors and forex trader trust <span class="logo"><em>M</em>alite<em>Fx</em></span>.</h2>
+        <h2 class="hero-text-3">Over 300 Investors and forex trader trust <span class="logo"><em>M</em>alite<em>Fx</em></span>.</h2>
         <div class="about-content">
-            <div class="image-placeholder"> <img src="./temp/malitephotos.png" class="testament-image" alt="testament photos"></div>
-            <div id="testimonials-window" class="testimonials-window">
-                <div id="testimonials-container" class="testimonials"></div>
+           
+            <!--<div class="image-placeholder"> <img src="./temp/malitephotos.png" class="testament-image" alt="testament photos"></div>
+            -->
+            
+                        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./temp/malitephotos0.png" style="width: 203px;
+                            height: 440px;" alt="Los Angeles" class="d-block" >
+            </div>
+            <div class="carousel-item">
+                <img src="./temp/malitephotos1.png" style="width: 203px;
+                            height: 440px;" alt="Chicago" class="d-block" >
+            </div>
+            <div class="carousel-item">
+                <img src="./temp/malitephotos.png" style="width: 203px;
+                            height: 440px;" alt="New York" class="d-block" >
+            </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
+        
+        
+                    <!-- <div id="testimonials-window" class="testimonials-window">
+                        <div id="testimonials-container" class="testimonials"></div>
+                    </div> -->
+                </div>
     </section>
 
     <section id="why" class="why-section">
@@ -112,5 +151,6 @@
     </section>
 
     <script src="script.js"></script>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
