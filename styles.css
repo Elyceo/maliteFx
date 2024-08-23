@@ -359,6 +359,11 @@ body {
 .contact-container{
     text-align: center;
 }
+.contact-link{
+    text-decoration: none;
+    color:white;
+    font-weight: 200;
+}
 @keyframes blink {
     0% { opacity: 0; }
     50% { opacity: 1; }
