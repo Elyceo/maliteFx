@@ -1,9 +1,12 @@
+
+
 /* Full height image header */
 .bgimg-1 {
-    background-position: center;
+
     background-size: cover;
-    background-image: url("./temp/stickimg.png");
+    background-image: url("./temp/img-bd-bur.jpg");
     min-height: 100%;
+    
   }
 .mytag{
     color:#c8ff00
@@ -16,21 +19,45 @@
 }
 #popup {
     position: fixed;
-    top: 80%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    z-index: 1000;
+    z-index: 1001;
     font-size:.8em;
+}
+#communityButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0878c4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: none;
+    transition: transform 0.1s;
+    z-index: 1000;
+}
+#communityButton:active {
+    transform: scale(0.95);
 }
 .logo {
     font-family: "Nanum Brush Script", cursive;
     font-weight: bold;
     font-size: 1em;
     color: #0878c4;
+}
+.navlogo {
+    color:#0878c4 !important;
+    font-weight:bold; 
+    font-size: 25px;
+    text-align: left !important;
 }
 body {
     margin: 0;
@@ -152,12 +179,22 @@ body {
     color: #000;
     font-weight: bold;
 }
+.hero-button:active{
+    transform: scale(.95)
+}
+.bgimg-2 {
 
+    background-size: cover;
+    background-image: url("./temp/img-bd-bur-section-2.jpg");
+    min-height: 100%;
+    
+  }
 .about-section {
-    background-color: #f0f0f0;
+    
     padding: 70px 0;
     text-align: center;
 }
+
 .about-title {
     font-size: 2.5em;
     max-width: 600px;

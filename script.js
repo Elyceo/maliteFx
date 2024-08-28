@@ -140,3 +140,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Floating join community button
+window.addEventListener('scroll', function() {
+    var button = document.getElementById('communityButton');
+    var heroHeight = document.querySelector('.hero-section').offsetHeight;
+    
+    if (window.scrollY > heroHeight) {
+        button.style.display = 'block';
+    } else {
+        button.style.display = 'none';
+    }
+});
