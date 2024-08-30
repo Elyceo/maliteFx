@@ -4,7 +4,7 @@
 .bgimg-1 {
 
     background-size: cover;
-    background-image: url("./temp/img-bd-bur.jpg");
+    background-image: url("./temp/img-bd-bur-2.gif");
     min-height: 100%;
     
   }
@@ -39,13 +39,18 @@
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px #000000;
     display: none;
     transition: transform 0.1s;
+    border: 2px solid #0878c4;
     z-index: 1000;
 }
 #communityButton:active {
     transform: scale(0.95);
+}
+#communityButton:hover {
+    background-color: transparent;
+    color: rgb(51, 51, 51);
 }
 .logo {
     font-family: "Nanum Brush Script", cursive;
@@ -173,6 +178,8 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 15px;
+    box-shadow: 1px 1px 2px #000000;
+    font-weight: bold;
 }
 .hero-button:hover {
     background-color: transparent;
@@ -185,7 +192,7 @@ body {
 .bgimg-2 {
 
     background-size: cover;
-    background-image: url("./temp/img-bd-bur-section-2.jpg");
+    background-image: url("./temp/img-bd-bur-3.gif");
     min-height: 100%;
     
   }
@@ -407,6 +414,13 @@ body {
     text-decoration: none;
     color:white;
     font-weight: 200;
+}
+.vid{
+    margin-top: 10%;
+    box-shadow: 2px 2px 4px #000000 ;
+}
+.slogon-home{
+    margin-top: 20%;
 }
 @keyframes blink {
     0% { opacity: 0; }
