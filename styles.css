@@ -58,6 +58,9 @@
     font-size: 1em;
     color: #0878c4;
 }
+.reason-content:hover .logo{
+    color:#f0f0f0;
+}
 .navlogo {
     color:#0878c4 !important;
     font-weight:bold; 
@@ -312,28 +315,31 @@ body {
     width: 250px;
     text-align: center;
     border-radius: 5px;
+    margin: 0 auto;
     
 
 }
 .reason-content:hover{
     background-color:rgba(08,120,196, 0.71);
-    color: whitesmoke !important;
+    color: whitesmoke !important; 
+    transform: scale(1.03);
+    box-shadow: 1px 1px 3px #000000;
 }
 .directions-title {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     
 }
 .directions-section {
     background-color: #f0f0f0;
     position: relative;
-}
-.directions-section {
+    text-align: left;
     min-height: 100vh;
     padding: 4rem 2rem;
     box-sizing: border-box;
 }
+
 .directions-buttons {
     display: flex;
     flex-wrap:wrap;
@@ -342,6 +348,10 @@ body {
     max-width: 800px;
     margin: 0 auto;
     position: relative;
+}
+.directions-section .reason-content{
+    margin: 0 auto;
+    margin-bottom: 5em;
 }
 .direction-btn {
     background-color: #0878c4;
@@ -535,6 +545,7 @@ body {
     margin-right:50%;
 
     }
+    
     .directions-buttons {
 
     }
